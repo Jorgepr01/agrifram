@@ -1,0 +1,18 @@
+{
+    "name": "viviana/agrocacao",
+    "description": "este sistema es para ver las enfermedades del cacao",
+    "autoload": {
+        "psr-4": {
+            "Viviana\\Agrocacao\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MANUELSANTAMARIA",
+            "email": "santamari2097@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

@@ -1,0 +1,121 @@
+/* DATOS PERSONALES */
+.personal-info {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+.personal-info h2 {
+  margin-bottom: 10px;
+  color:#0b7300
+}
+.personal-info img{
+  display: block; /* Cambia a bloque para centrar horizontalmente */
+  margin: auto; /* Centrar horizontalmente */
+  width: 130px; /* Establece una ancho fija */
+  height: 130px; /* Establece una altura fija */
+  object-fit: cover; /* Cubre completamente el contenedor manteniendo la proporción original */
+  border-radius: 50%;
+}
+.personal-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-info ul li {
+  margin-bottom: 10px;
+}
+
+.personal-info ul li strong {
+  font-weight: bold;
+}
+
+.vista-previa{
+  width: 200px; ;
+  height: 200px;
+  margin: auto;
+}
+.vista-previa img{
+  display: block;
+  margin: auto; /* Centrar horizontalmente */
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+  width: 400px;
+  height: 200px;
+  background-color: #0b7300;
+  border-radius: 50%; /* Hacer la imagen circular */
+}
+
+.display-perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.titulo {
+  text-align: center;
+  color: #333;
+}
+
+
+.Formulario {
+  width: 100%;
+
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color:#0b7300
+}
+
+#act_perfil {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  /* background: #f9f9f9; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-_update,
+.actualizar-user{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  .display-perfil {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .personal-info {
+    margin-bottom: 0;
+  }
+
+  .Formulario {
+    width: 45%;
+  }
+}

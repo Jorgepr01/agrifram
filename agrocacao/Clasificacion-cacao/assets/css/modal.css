@@ -1,0 +1,174 @@
+  .modal-propio {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+  
+  }
+  
+  .modal-content-propio{
+    background-color: #fefefe;
+    margin: 15% auto; 
+    margin-top: 60px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /*TODO: formularios input y buton dentro del modal cambio de contraseña */
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formulario input{
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 10px;
+  } 
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  /* formulario */
+  
+  .titulo-modal{
+    display: block;
+    background-color: #342523;
+    border-radius: 5px;
+    width: 90%;
+    height: 50px;
+    color: white;
+    font-size: 2.3vw; /* Tamaño del texto basado en el ancho de la ventana */
+    margin-left: 25px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /*Centrar horizontalmente*/
+  }
+
+  /*TODO: input subir img */
+  .image-upload {
+    text-align: center;
+  }
+
+  .custom-file-upload {
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 220px;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-file-upload:hover {
+    background-color: #0056b3;
+  }
+
+  .custom-file-upload i {
+    margin-right: 5px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  /*TODO: div de input y lbl*/
+  .form{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    /* cambia la posición del elemento en relación con el elemento principal  */
+    position: relative;
+    overflow: hidden;    
+    
+  }
+  
+  
+  .form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: black;
+    padding-top: 12px;
+    border: none;
+    outline: 0px;
+  }
+  
+  
+  .form .lbl{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #1783db;
+  }
+  
+  
+  
+  .form .lbl:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0b7300;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  
+  .text-span{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: black;
+  }
+  
+  
+  .form input:focus + .lbl .text-span,.form input:valid + .lbl .text-span{
+    transform: translateY(-85%);
+    font-size: 14px;
+    color: #0b7300;
+  }
+  
+  
+  .form input:focus + .lbl:after, .form input:valid + .lbl:after{
+    transform: translateX(0%);
+  } 
+  
+   
+  
+ 
+
+
+
+
+  
+  

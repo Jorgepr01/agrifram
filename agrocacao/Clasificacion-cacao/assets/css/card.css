@@ -1,0 +1,57 @@
+/* card*/
+.contenedor-card{
+    /* en un contenedor flexible, los elementos flexibles se envolverán en una nueva línea si no tienen 
+    suficiente espacio horizontal en la línea actual */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  .card {
+    position: relative;
+    width: calc(50% - 20px); /* Calcula el 50% del ancho menos el margen entre las tarjetas */
+    max-width: 300px; /* Establece el ancho máximo de la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho de la tarjeta */
+    word-wrap: break-word;
+  }
+
+  
+  .contenedor-card .card-body img{
+    display: block; /* Cambia a bloque para centrar horizontalmente */
+    margin: auto; /* Centrar horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    width: 130px;
+    border-radius: 50%;
+  }
+  
+  
+  
+  .card-footer{
+    width: 100%;
+    margin-top: 1em; /* Utilizando em */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 0.5em; /* Utilizando em */
+  }
+  
+  .card-footer button{
+    margin-top: 5px;
+  }
+  
+
+
+  @media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Cambia el ancho a 50% en pantallas más pequeñas */
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px); /* Cambia el ancho a 100% en pantallas aún más pequeñas */
+    }
+  }

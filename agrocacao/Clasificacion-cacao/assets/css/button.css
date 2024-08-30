@@ -1,0 +1,82 @@
+ /* botones */
+ .button-container {
+    margin-top: 40px;
+    text-align: center;
+    /* background-color: #0b7300; */
+    width: 300px;
+  }
+
+  /* BOTONES CARD*/
+
+  
+.inline-button {
+    background-color: #1783db;
+    border: none;
+    color: white;
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em; /* Utilizando em para el tamaño de fuente */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inline-button:hover {
+    background-color: #0b7300;
+  }
+  
+  .inline-button-eliminar {
+    background-color: #1783db;
+    margin-top: 2%; /* Utilizando porcentajes para el margen superior */
+    border: none;
+    color: white;
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em; /* Utilizando em para el tamaño de fuente */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inline-button-eliminar:hover {
+    background-color: red;
+  }
+    
+
+  .inline-button-editar {
+    background-color: #1783db;
+    margin-top: 5px;
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 13px; /* Tamaño de fuente */
+    border-radius: 5px; /* Radio de borde */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+   }
+  
+  
+  .inline-button-editar:hover{
+    background-color: #cab643;
+  }
+  
+
+  .inline-button-editar-img{
+    /* background-color: #1783db; */
+    margin-top: 5px;
+    border: none; /* Sin borde */
+    color: black; /* Color de texto */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 13px; /* Tamaño de fuente */
+    border-radius: 5px; /* Radio de borde */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+  }
+
+  .inline-button-editar-img:hover{
+    background-color: #cab643;
+
+  }
+

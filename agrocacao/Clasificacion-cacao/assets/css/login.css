@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* poner la imagen de fondo */
+    background: url(../img/bg.jpg);
+    
+    /*especifica el tamaño de las imágenes de fondo: cubrir todo el contenedor*/
+    background-size: 100% 100%;
+    /* imagen se muestra en su tamaño original y no se repite en la dirección horizontal ni en la dirección vertical. */
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    /* la imagen de fondo se colocará en el centro del elemento tanto horizontal como verticalmente */
+    background-position: center;
+    /* altura maxima del dispositivo */
+    height: 100vh;
+}
+
+
+
+
+.logo {
+    width: 320px;
+    height: 420px;
+    background-color: rgba(160, 153, 153, 0.5);
+    color: black;
+    top: 50%;
+    right: 30px;
+    /* poner adelante */
+    position: absolute;
+    /*tranformar para poner un elemeto como lo quieres */
+    transform: translatey(-50%);
+    /* en un elemento, el relleno ancho y la altura */
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10%;
+}
+/* poner la primer la letra mayuscula */
+.logo :first-letter {
+    text-transform: uppercase;
+}
+
+/* imagen de login */
+.logo .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #292a2c;
+}
+
+.logo label {
+    margin: 0;
+    padding: 0;
+    /* se utiliza para establecer el grosor (o peso) de la fuente de un elemento de texto. */
+    font-weight: bold;
+    display: block;
+}
+
+.logo input {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.logo input[type="text"],
+.logo input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #684a46;
+    /* fondo transparente */
+    background: transparent;
+    /* para que no se me refleje caja */
+    outline: none;
+    height: 40px;
+    color: #1a0b04;
+    font-size: 18px;
+}
+
+.logo input[type="submit"] {
+    border: none;
+    /* para que no se me refleje caja */
+    outline: none;
+    height: 40px;
+    background: #684a46;
+    color: #000;
+    font-size: 20px;
+    border-radius: 200px;
+}
+
+.logo input[type="submit"]:hover {
+    cursor: pointer;
+    background: #32266b;
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
+}
+
+.logo a:hover {
+    color: #2e0fb8;
+}
+
+
+@media screen and (max-width: 1400px){
+    body {
+        margin: 0;
+        padding: 0;
+        /* poner la imagen de fondo */
+        background: url(../img/bg.jpg);
+        
+        /*especifica el tamaño de las imágenes de fondo: cubrir todo el contenedor*/
+        background-size: 100% 100%;
+        /* imagen se muestra en su tamaño original y no se repite en la dirección horizontal ni en la dirección vertical. */
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+        /* la imagen de fondo se colocará en el centro del elemento tanto horizontal como verticalmente */
+        background-position: center;
+        /* altura maxima del dispositivo */
+        height: 100vh;
+    }
+    .ssee{
+        opacity: 0;
+    }
+    .logo {
+        width: 320px;
+        height: 420px;
+        background-color: rgba(255, 255, 255, 0.5);;
+        color: black;
+        top: 50%;
+        left: 50%;
+        /* poner adelante */
+        position: absolute;
+        /*tranformar para poner un elemeto como lo quieres */
+        transform: translate(-50%, -50%);
+        /* en un elemento, el relleno ancho y la altura */
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+
+}
+
+
+
+/* Grupo de formulario */
+.form-group-propio {
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+.form-group-propio {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.lbl-recu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Espaciado entre el icono y el texto */
+.lbl-recu i {
+    margin-right: 8px;
+}
+
+/* Estilo de los campos de entrada */
+.txt-recupe {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+/* Estilo del botón */
+.btn-recupe {
+    width: 100%;
+    padding: 10px;
+    background-color: #684a46;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilo del botón al pasar el cursor */
+.txt-recupe-contra {
+    width: calc(100% - 30px); /* Ajuste para el icono */
+    padding-right: 30px; /* Espacio para el icono */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.btn-recupe:hover {
+    background-color: #32266b;
+}
+
+/* input de cambiar contraseña */
+.form-group-contra-propio {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.lbl-contra {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lbl-contra i {
+    margin-right: 8px;
+}
+
+.txt-contra {
+    width: calc(100% - 30px); /* Ajuste para el icono */
+    padding-right: 30px; /* Espacio para el icono */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.toggle-icon-contra {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-20%);
+    cursor: pointer;
+}
